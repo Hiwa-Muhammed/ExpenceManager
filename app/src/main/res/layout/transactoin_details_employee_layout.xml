@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F5F7">
+    <ImageButton
+        android:id="@+id/back_img_transaction_employee"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/left_arrow"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/category_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:textSize="30dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textFontWeight="1000"
+        android:textColor="#222"
+        android:layout_toRightOf="@id/back_img_transaction_employee"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/total_relative"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_img_transaction_employee"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/et3_custom">
+
+        <TextView
+            android:id="@+id/total_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Total"
+            android:textColor="#222"
+            android:textFontWeight="700"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/total_amount_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_txt"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="78,000 IQD"
+            android:textAlignment="center"
+            android:textColor="#222"
+            android:textFontWeight="1000"
+            android:textSize="40sp" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/expenses_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/total_relative"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:dividerHeight="15dp">
+
+    </ListView>
+
+</RelativeLayout>

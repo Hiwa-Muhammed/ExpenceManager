@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditIncome"
+    android:background="#F3F5F7"
+    >
+
+    <ImageButton
+        android:id="@+id/back_img_edit_income"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/left_arrow"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="15dp"
+
+        />
+    <TextView
+        android:id="@+id/income_edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Edit Inome"
+        android:textSize="50sp"
+        android:fontFamily="@font/indigo_daisy"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#333"
+        />
+    <TextView
+        android:id="@+id/last_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/income_edit_title"
+        android:text="Last Income amount: 25,000IQD"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:textColor="#777"
+        />
+
+
+    <EditText
+        android:id="@+id/new_income_amount"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Amount"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:padding="15dp"
+        android:inputType="number"
+        android:layout_below="@id/last_amount"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et2_custom"
+        android:textSize="30sp"
+        android:textColorHint="#555"
+        android:textColor="#222"/>
+
+
+
+    <Button
+        android:id="@+id/btn_set_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_income_amount"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Set"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

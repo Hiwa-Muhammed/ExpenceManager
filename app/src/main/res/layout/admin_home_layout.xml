@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F3F5F7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+
+        <TextView
+            android:id="@+id/admin_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/indigo_daisy"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:text="Admin Page"
+            android:textColor="#333"
+            android:textSize="50sp" />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="177dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/gear" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/et3_custom"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <TextView
+            android:id="@+id/admin_total_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Balance"
+            android:textColor="#222"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textFontWeight="700"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular"
+            />
+        <TextView
+            android:id="@+id/admin_total_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/admin_total_txt"
+            android:text="78,000 IQD"
+            android:textAlignment="center"
+            android:textColor="#222"
+            android:textSize="40sp"
+            android:textFontWeight="1000"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_regular"
+            />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/up_arrow"
+            android:layout_below="@id/admin_total_balance"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/admin_income_img"
+            />
+        <TextView
+            android:id="@+id/admin_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Income"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="15dp"
+            android:textFontWeight="100"
+            android:layout_toRightOf="@id/admin_income_img"
+            android:layout_below="@id/admin_total_balance"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#54E360"
+            />
+        <TextView
+            android:id="@+id/admin_income_ammount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 IQD"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="20dp"
+            android:textFontWeight="800"
+            android:layout_toRightOf="@id/admin_income_img"
+            android:layout_below="@id/admin_income"
+            android:layout_marginLeft="10dp"
+            android:textColor="#54E360"
+            />
+        <ImageView
+            android:id="@+id/admin_expense_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/down_arrow"
+            android:layout_below="@id/admin_total_balance"
+            android:layout_toRightOf="@id/admin_income_img"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="130dp"
+            />
+        <TextView
+            android:id="@+id/admin_expense_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expenses"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="15dp"
+            android:textFontWeight="100"
+            android:layout_toRightOf="@id/admin_expense_img"
+            android:layout_below="@id/admin_total_balance"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#DB2B42"
+            />
+        <TextView
+            android:id="@+id/admin_expense_ammount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22,000IQD"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="20dp"
+            android:textFontWeight="800"
+            android:layout_toRightOf="@id/admin_expense_img"
+            android:layout_below="@id/admin_expense_txt"
+            android:layout_marginLeft="10dp"
+            android:textColor="#DB2B42"
+            />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/incomes_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et4_custom"
+        android:text="Incomes"
+        android:textSize="25sp"
+        android:fontFamily="@font/roboto_regular"
+        android:textFontWeight="1000"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+
+        >
+        <TextView
+            android:id="@+id/transaction_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transactions"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="18sp"
+            android:textFontWeight="1000"
+            android:textColor="#222"
+            />
+        <TextView
+            android:id="@+id/admin_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="15sp"
+            android:textFontWeight="100"
+            android:layout_alignParentEnd="true"
+            android:textColor="#222"
+
+            />
+
+        <ListView
+            android:id="@+id/catigory_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/transaction_txt"
+            android:layout_marginTop="15dp"
+            android:dividerHeight="15dp">
+        </ListView>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
